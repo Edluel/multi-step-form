@@ -1,0 +1,16 @@
+.side-bar{
+    display: flex;
+    flex-direction: column;
+    width: 274px;
+    height: 568px;
+    background-image: url('../../assets/images/bg-sidebar-desktop.svg');
+    background-size: contain;
+
+    button {
+        border-radius: 50%;
+        cursor: pointer;
+        border: 1px solid #fff;
+        color: #fff;
+        background: rgba($color: #000000, $alpha: 0.0);
+    }
+}
