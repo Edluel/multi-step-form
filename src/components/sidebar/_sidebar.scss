@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 .side-bar{
     display: flex;
     flex-direction: column;
@@ -5,12 +7,37 @@
     height: 568px;
     background-image: url('../../assets/images/bg-sidebar-desktop.svg');
     background-size: contain;
+    .frist{ margin-top: 30px; }
+    &-step{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 35px;
+        margin-top: 17px;
+        &-text{
+            line-height: 0.2;
+            flex-direction: column;
+            margin-left: 13px;
+            h2 {
+                font-weight: 500;
+                font-size: 0.8rem;
+                color: $pastel-blue;
+            }
+            p {
+                font-weight: 700;
+                color: $alabaster;
+            }
+        }
+    }
 
     button {
+        font-size: 0.9rem;
+        font-weight: 400;
+        padding: 10px;
         border-radius: 50%;
         cursor: pointer;
-        border: 1px solid #fff;
-        color: #fff;
+        border: 1px solid $white;
+        color: $alabaster;
         background: rgba($color: #000000, $alpha: 0.0);
     }
 }
