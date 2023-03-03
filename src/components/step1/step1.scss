@@ -1,0 +1,65 @@
+@import "../../styles/variables.scss";
+
+.step-1 {
+  padding-top: 25px;
+  padding-left: 100px;
+  height: 80vh;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $marine-blue;
+    margin-bottom: 8px;
+  }
+  p {
+    margin-top: 0px;
+    color: $cool-gray;
+    margin-bottom: 40px;
+  }
+
+  &-form{
+    display: flex;
+    flex-direction: column;
+
+    label {
+      color: $marine-blue;
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    button {
+      border-radius: 7px;
+      padding: 10px;
+      margin: 5px 0;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      border: none;
+      border: 1px solid $cool-gray;
+      font-size: 1rem;
+      margin-bottom: 15px;
+      &::placeholder {
+        color: $cool-gray;
+        font-weight: 500;
+      }
+    }
+  
+    button {
+      background-color: $marine-blue;
+      color: $magnolia;
+      font-size: 1.1rem;
+      cursor: pointer;
+      align-self: flex-end;
+      margin-top: 25%;
+      &:hover {
+        background-color: $purplish-blue;
+      }
+    }
+  }
+}

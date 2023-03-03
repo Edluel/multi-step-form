@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+.step-1 {
+  padding-top: 25px;
+  padding-left: 100px;
+  height: 80vh;
+}
+.step-1 h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(213, 96%, 18%);
+  margin-bottom: 8px;
+}
+.step-1 p {
+  margin-top: 0px;
+  color: hsl(231, 11%, 63%);
+  margin-bottom: 40px;
+}
+.step-1-form {
+  display: flex;
+  flex-direction: column;
+}
+.step-1-form label {
+  color: hsl(213, 96%, 18%);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.step-1-form input[type=text],
+.step-1-form input[type=email],
+.step-1-form input[type=tel],
+.step-1-form button {
+  border-radius: 7px;
+  padding: 10px;
+  margin: 5px 0;
+}
+.step-1-form input[type=text],
+.step-1-form input[type=email],
+.step-1-form input[type=tel] {
+  border: none;
+  border: 1px solid hsl(231, 11%, 63%);
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.step-1-form input[type=text]::-moz-placeholder, .step-1-form input[type=email]::-moz-placeholder, .step-1-form input[type=tel]::-moz-placeholder {
+  color: hsl(231, 11%, 63%);
+  font-weight: 500;
+}
+.step-1-form input[type=text]::placeholder,
+.step-1-form input[type=email]::placeholder,
+.step-1-form input[type=tel]::placeholder {
+  color: hsl(231, 11%, 63%);
+  font-weight: 500;
+}
+.step-1-form button {
+  background-color: hsl(213, 96%, 18%);
+  color: hsl(217, 100%, 97%);
+  font-size: 1.1rem;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 25%;
+}
+.step-1-form button:hover {
+  background-color: hsl(243, 100%, 62%);
+}/*# sourceMappingURL=step1.css.map */

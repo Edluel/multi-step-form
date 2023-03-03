@@ -1,2 +1,6 @@
 @use 'global';
-@use '../components/sidebar/sidebar';
+
+.App {
+    display: flex;
+    flex-direction: row;
+}
