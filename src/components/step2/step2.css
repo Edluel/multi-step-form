@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+.step-2 {
+  padding-top: 25px;
+  padding-left: 100px;
+  height: 540px;
+}
+.step-2-billing {
+  width: 100% px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20%;
+  border-radius: 7px;
+  background-color: hsl(217, 100%, 97%);
+}
+.step-2-billing-option {
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(231, 11%, 63%);
+  padding: 10px;
+  cursor: pointer;
+}
+.step-2-billing-option.active {
+  color: hsl(213, 96%, 18%);
+}
+.step-2-billing-switch {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 100%);
+}
+.step-2-billing-switch-pointer {
+  background-color: hsl(213, 96%, 18%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}/*# sourceMappingURL=step2.css.map */

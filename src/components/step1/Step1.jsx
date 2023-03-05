@@ -56,7 +56,7 @@ export default function Step1() {
                 type="tel"
                 id="phone"
                 name="phone"
-                pattern="[0-9]{10}"
+                pattern="[0-9]{9}"
                 value={phone}
                 onChange={handlePhoneChange}
                 placeholder="Enter your phone number"

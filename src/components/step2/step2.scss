@@ -1,0 +1,51 @@
+@import "../../styles/variables.scss";
+
+.step-2 {
+  padding-top: 25px;
+  padding-left: 100px;
+  height: 540px;
+
+
+  &-billing {
+    width: 100%px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20%;
+    border-radius: 7px;
+    background-color: $magnolia;
+
+    &-option {
+      font-size: 1rem;
+      font-weight: 500;
+      color: $cool-gray;
+      padding: 10px;
+      cursor: pointer;
+      &.active {
+        color: $marine-blue;
+      }
+    }
+
+    &-switch{
+      display: flex;
+      align-items: center;
+      width: 60px;
+      height: 30px;
+      border-radius: 15px;
+      background-color: $white;
+      &-pointer{
+        background-color: $marine-blue;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        transition: transform 0.3s ease-in-out;
+        
+      }
+    }
+    
+  }
+  
+
+
+}
