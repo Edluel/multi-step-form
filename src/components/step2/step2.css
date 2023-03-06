@@ -3,6 +3,65 @@
   padding-top: 25px;
   padding-left: 100px;
   height: 540px;
+  width: 500px;
+}
+.step-2 h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(213, 96%, 18%);
+  margin-bottom: 8px;
+}
+.step-2 p {
+  margin-top: 0px;
+  color: hsl(231, 11%, 63%);
+  margin-bottom: 40px;
+}
+.step-2-plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.step-2-plan-arcade, .step-2-plan-advanced, .step-2-plan-pro {
+  width: 25%;
+  height: 200px;
+  border-radius: 7px;
+  border: 2px solid hsl(231, 11%, 63%);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.step-2-plan-arcade.active, .step-2-plan-advanced.active, .step-2-plan-pro.active {
+  background-color: hsl(228, 100%, 84%);
+}
+.step-2-plan-arcade h2, .step-2-plan-advanced h2, .step-2-plan-pro h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(213, 96%, 18%);
+}
+.step-2-plan-arcade p, .step-2-plan-advanced p, .step-2-plan-pro p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(231, 11%, 63%);
+}
+.step-2-plan-arcade-img {
+  background-image: url("../../../assets/images/icon-arcade.svg");
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+}
+.step-2-plan-advanced-img {
+  background-image: url("../../../assets/images/icon-advanced.svg");
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+}
+.step-2-plan-pro-img {
+  background-image: url("../../../assets/images/icon-pro.svg");
+  background-size: contain;
+  width: 50px;
+  height: 50px;
 }
 .step-2-billing {
   width: 100% px;
@@ -13,6 +72,7 @@
   padding: 0 20%;
   border-radius: 7px;
   background-color: hsl(217, 100%, 97%);
+  margin-top: 25%;
 }
 .step-2-billing-option {
   font-size: 1rem;
@@ -24,16 +84,21 @@
 .step-2-billing-option.active {
   color: hsl(213, 96%, 18%);
 }
+.step-2-billing-option.active:nth-of-type(1) ~ .step-2-billing-switch .step-2-billing-switch-pointer {
+  transform: translateX(-150%);
+}
 .step-2-billing-switch {
   display: flex;
   align-items: center;
+  justify-content: end;
   width: 60px;
   height: 30px;
   border-radius: 15px;
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(213, 96%, 18%);
+  padding-right: 5px;
 }
 .step-2-billing-switch-pointer {
-  background-color: hsl(213, 96%, 18%);
+  background-color: hsl(0, 0%, 100%);
   width: 20px;
   height: 20px;
   border-radius: 50%;

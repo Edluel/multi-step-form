@@ -4,7 +4,80 @@
   padding-top: 25px;
   padding-left: 100px;
   height: 540px;
+  width: 500px;
+  
+  
 
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $marine-blue;
+    margin-bottom: 8px;
+  }
+  p {
+    margin-top: 0px;
+    color: $cool-gray;
+    margin-bottom: 40px;
+  }
+
+  &-plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &-arcade, &-advanced, &-pro{
+      width: 25%;
+      height: 200px;
+      border-radius: 7px;
+      border: 2px solid $cool-gray;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+
+      &.active {
+        background-color: $pastel-blue;
+      }
+      h2 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $marine-blue;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: 500;
+        color: $cool-gray;
+      }
+    }
+
+    &-arcade {
+      &-img {
+        background-image: url("../../../assets/images/icon-arcade.svg");
+        background-size: contain;
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    &-advanced {
+      &-img {
+        background-image: url("../../../assets/images/icon-advanced.svg");
+        background-size: contain;
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    &-pro {
+      &-img {
+        background-image: url("../../../assets/images/icon-pro.svg");
+        background-size: contain;
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+  }
 
   &-billing {
     width: 100%px;
@@ -15,6 +88,7 @@
     padding: 0 20%;
     border-radius: 7px;
     background-color: $magnolia;
+    margin-top: 25%;
 
     &-option {
       font-size: 1rem;
@@ -24,28 +98,33 @@
       cursor: pointer;
       &.active {
         color: $marine-blue;
+        // move pointer to the left
+        &:nth-of-type(1) ~ .step-2-billing-switch .step-2-billing-switch-pointer {
+          transform: translateX(-150%);
+        }
       }
     }
 
     &-switch{
       display: flex;
       align-items: center;
+      justify-content: end; // pointer default is on the right
       width: 60px;
       height: 30px;
       border-radius: 15px;
-      background-color: $white;
+      background-color: $marine-blue;
+      padding-right: 5px;
       &-pointer{
-        background-color: $marine-blue;
+        background-color: $white;
         width: 20px;
         height: 20px;
         border-radius: 50%;
         transition: transform 0.3s ease-in-out;
-        
       }
     }
     
   }
   
-
-
+  
+  
 }

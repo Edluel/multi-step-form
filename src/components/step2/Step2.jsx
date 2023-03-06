@@ -15,14 +15,23 @@ export default function Step2() {
         You have the option of monthly or yearly billing.
       </p>
       <div className="step-2-plan">
-        <div className="step-2-plan-acade">
-          Arcade
+        <div className="step-2-plan-arcade">
+          <div className="step-2-plan-arcade-img"/>
+          <div className="step-2-arcade-text">
+            Arcade
+          </div>
         </div>
         <div className="step-2-plan-advanced">
-          Advanced
+          <div className="step-2-plan-advanced-img"/>
+          <div className="step-2-advanced-text">
+            Advanced
+          </div>
         </div>
         <div className="step-2-plan-pro">
-          Pro                       
+          <div className="step-2-plan-pro-img"/>
+          <div className="step-2-pro-text">
+            Pro
+          </div>                       
         </div>
       </div>
       <div className="step-2-billing">
