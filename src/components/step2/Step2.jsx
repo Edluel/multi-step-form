@@ -18,19 +18,25 @@ export default function Step2() {
         <div className="step-2-plan-arcade">
           <div className="step-2-plan-arcade-img"/>
           <div className="step-2-arcade-text">
-            Arcade
+            <h3>Arcade</h3>
+            <p>$9/mo</p>
+            <h4>2 months free</h4>
           </div>
         </div>
         <div className="step-2-plan-advanced">
           <div className="step-2-plan-advanced-img"/>
           <div className="step-2-advanced-text">
-            Advanced
+            <h3>Advanced</h3>
+            <p>$12/mo</p>
+            <h4>2 months free</h4>
           </div>
         </div>
         <div className="step-2-plan-pro">
           <div className="step-2-plan-pro-img"/>
           <div className="step-2-pro-text">
-            Pro
+            <h3>Pro</h3>
+            <p>$15/mo</p>
+            <h4>2 months free</h4>
           </div>                       
         </div>
       </div>

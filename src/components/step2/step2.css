@@ -23,33 +23,31 @@
 }
 .step-2-plan-arcade, .step-2-plan-advanced, .step-2-plan-pro {
   width: 25%;
-  height: 200px;
   border-radius: 7px;
-  border: 2px solid hsl(231, 11%, 63%);
-  padding: 10px;
+  border: 2px solid hsl(229, 24%, 87%);
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
 }
-.step-2-plan-arcade.active, .step-2-plan-advanced.active, .step-2-plan-pro.active {
-  background-color: hsl(228, 100%, 84%);
-}
-.step-2-plan-arcade h2, .step-2-plan-advanced h2, .step-2-plan-pro h2 {
-  font-size: 1.2rem;
-  font-weight: 700;
+.step-2-plan-arcade h3, .step-2-plan-advanced h3, .step-2-plan-pro h3 {
   color: hsl(213, 96%, 18%);
+  margin-bottom: 0px;
 }
 .step-2-plan-arcade p, .step-2-plan-advanced p, .step-2-plan-pro p {
-  font-size: 1rem;
-  font-weight: 500;
-  color: hsl(231, 11%, 63%);
+  margin: 2px 0;
+}
+.step-2-plan-arcade h4, .step-2-plan-advanced h4, .step-2-plan-pro h4 {
+  color: hsl(243, 100%, 62%);
+  margin: 8px 0;
 }
 .step-2-plan-arcade-img {
   background-image: url("../../../assets/images/icon-arcade.svg");
   background-size: contain;
   width: 50px;
   height: 50px;
+  margin-bottom: 30px;
 }
 .step-2-plan-advanced-img {
   background-image: url("../../../assets/images/icon-advanced.svg");
@@ -72,7 +70,7 @@
   padding: 0 20%;
   border-radius: 7px;
   background-color: hsl(217, 100%, 97%);
-  margin-top: 25%;
+  margin-top: 25px;
 }
 .step-2-billing-option {
   font-size: 1rem;
@@ -85,7 +83,7 @@
   color: hsl(213, 96%, 18%);
 }
 .step-2-billing-option.active:nth-of-type(1) ~ .step-2-billing-switch .step-2-billing-switch-pointer {
-  transform: translateX(-150%);
+  transform: translateX(-170%);
 }
 .step-2-billing-switch {
   display: flex;

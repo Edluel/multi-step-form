@@ -26,28 +26,16 @@
     justify-content: space-between;
     &-arcade, &-advanced, &-pro{
       width: 25%;
-      height: 200px;
       border-radius: 7px;
-      border: 2px solid $cool-gray;
-      padding: 10px;
+      border: 2px solid $light-gray;
+      padding: 15px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       cursor: pointer;
-
-      &.active {
-        background-color: $pastel-blue;
-      }
-      h2 {
-        font-size: 1.2rem;
-        font-weight: 700;
-        color: $marine-blue;
-      }
-      p {
-        font-size: 1rem;
-        font-weight: 500;
-        color: $cool-gray;
-      }
+      h3 { color: $marine-blue; margin-bottom: 0px; }
+      p { margin: 2px 0;}
+      h4 { color: $purplish-blue; margin: 8px 0; }
     }
 
     &-arcade {
@@ -56,6 +44,7 @@
         background-size: contain;
         width: 50px;
         height: 50px;
+        margin-bottom: 30px;
       }
     }
 
@@ -88,7 +77,7 @@
     padding: 0 20%;
     border-radius: 7px;
     background-color: $magnolia;
-    margin-top: 25%;
+    margin-top: 25px;
 
     &-option {
       font-size: 1rem;
@@ -100,7 +89,7 @@
         color: $marine-blue;
         // move pointer to the left
         &:nth-of-type(1) ~ .step-2-billing-switch .step-2-billing-switch-pointer {
-          transform: translateX(-150%);
+          transform: translateX(-170%);
         }
       }
     }
@@ -124,7 +113,5 @@
     }
     
   }
-  
-  
   
 }
