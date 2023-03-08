@@ -3,7 +3,7 @@ import './step2.css'
 
 export default function Step2() {
   const [activeOption, setActiveOption] = useState('Monthly');
-  const [selectedPlan, setSelectedPlan] = useState('');
+  const [selectedPlan, setSelectedPlan] = useState('Arcade');
 
   const handleOptionClick = (option) => {
     setActiveOption(option);

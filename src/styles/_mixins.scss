@@ -1,0 +1,51 @@
+@mixin custom-box {
+    padding-top: 25px;
+    padding-left: 100px;
+    height: 540px;
+    width: 500px;
+    
+    h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $marine-blue;
+        margin-bottom: 8px;
+    }
+    p {
+        margin-top: 0px;
+        color: $cool-gray;
+        margin-bottom: 40px;
+    }
+}
+
+@mixin stepFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25%;
+  
+    &-back {
+        color: $cool-gray;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        background-color: rgba($color: #000000, $alpha: 0);
+        border: none;
+        &:hover {
+            color: $marine-blue;
+        }	
+    }
+  
+    &-next {
+        background-color: $marine-blue;
+        color: $magnolia;
+        font-size: 1.1rem;
+        cursor: pointer;
+        align-self: flex-end;
+        border-radius: 7px;
+        padding: 10px;
+        &:hover {
+            background-color: $purplish-blue;
+        }
+    }
+}
+  

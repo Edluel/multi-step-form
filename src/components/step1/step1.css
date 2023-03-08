@@ -3,11 +3,12 @@
   padding-top: 25px;
   padding-left: 100px;
   height: 540px;
+  width: 500px;
 }
 .step-1 h1 {
   font-size: 2rem;
   font-weight: 700;
-  color: hsl(213, 96%, 18%);
+  color: hsl(213, 96%, 28%);
   margin-bottom: 8px;
 }
 .step-1 p {
@@ -20,7 +21,7 @@
   flex-direction: column;
 }
 .step-1-form label {
-  color: hsl(213, 96%, 18%);
+  color: hsl(213, 96%, 28%);
   font-size: 1rem;
   font-weight: 500;
   margin-bottom: 5px;
@@ -52,7 +53,7 @@
   font-weight: 500;
 }
 .step-1-form button {
-  background-color: hsl(213, 96%, 18%);
+  background-color: hsl(213, 96%, 28%);
   color: hsl(217, 100%, 97%);
   font-size: 1.1rem;
   cursor: pointer;

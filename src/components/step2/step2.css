@@ -8,7 +8,7 @@
 .step-2 h1 {
   font-size: 2rem;
   font-weight: 700;
-  color: hsl(213, 96%, 18%);
+  color: hsl(213, 96%, 28%);
   margin-bottom: 8px;
 }
 .step-2 p {
@@ -32,7 +32,7 @@
   cursor: pointer;
 }
 .step-2-plan-arcade h3, .step-2-plan-advanced h3, .step-2-plan-pro h3 {
-  color: hsl(213, 96%, 18%);
+  color: hsl(213, 96%, 28%);
   margin-bottom: 0px;
 }
 .step-2-plan-arcade p, .step-2-plan-advanced p, .step-2-plan-pro p {
@@ -84,7 +84,7 @@
   cursor: pointer;
 }
 .step-2-billing-option.active {
-  color: hsl(213, 96%, 18%);
+  color: hsl(213, 96%, 28%);
 }
 .step-2-billing-option.active:nth-of-type(1) ~ .step-2-billing-switch .step-2-billing-switch-pointer {
   transform: translateX(-170%);
@@ -96,7 +96,7 @@
   width: 60px;
   height: 30px;
   border-radius: 15px;
-  background-color: hsl(213, 96%, 18%);
+  background-color: hsl(213, 96%, 28%);
   padding-right: 5px;
 }
 .step-2-billing-switch-pointer {
@@ -121,10 +121,10 @@
   border: none;
 }
 .step-2-footer-back:hover {
-  color: hsl(213, 96%, 18%);
+  color: hsl(213, 96%, 28%);
 }
 .step-2-footer-next {
-  background-color: hsl(213, 96%, 18%);
+  background-color: hsl(213, 96%, 28%);
   color: hsl(217, 100%, 97%);
   font-size: 1.1rem;
   cursor: pointer;

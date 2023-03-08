@@ -2,6 +2,7 @@ import Sidebar from './components/sidebar/Sidebar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Step1 from './components/step1/Step1';
 import Step2 from './components/step2/Step2';
+import Step3 from './components/step3/Step3';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
               <Step2/>
             </Route>
             <Route exact path="/step3">
-              <Step1/>
+              <Step3/>
             </Route>
             <Route exact path="/step4">
               <Step1/>

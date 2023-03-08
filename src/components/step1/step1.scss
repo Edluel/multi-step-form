@@ -1,21 +1,8 @@
 @import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
 
 .step-1 {
-  padding-top: 25px;
-  padding-left: 100px;
-  height: 540px;
-
-  h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: $marine-blue;
-    margin-bottom: 8px;
-  }
-  p {
-    margin-top: 0px;
-    color: $cool-gray;
-    margin-bottom: 40px;
-  }
+  @include custom-box;
 
   &-form{
     display: flex;
