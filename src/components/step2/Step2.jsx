@@ -20,7 +20,7 @@ export default function Step2() {
           <div className="step-2-arcade-text">
             <h3>Arcade</h3>
             <p>$9/mo</p>
-            <h4>2 months free</h4>
+            {activeOption === 'Yearly' ? <h4>2 months free</h4> : null}
           </div>
         </div>
         <div className="step-2-plan-advanced">
@@ -28,7 +28,7 @@ export default function Step2() {
           <div className="step-2-advanced-text">
             <h3>Advanced</h3>
             <p>$12/mo</p>
-            <h4>2 months free</h4>
+            {activeOption === 'Yearly' ? <h4>2 months free</h4> : null}
           </div>
         </div>
         <div className="step-2-plan-pro">
@@ -36,7 +36,7 @@ export default function Step2() {
           <div className="step-2-pro-text">
             <h3>Pro</h3>
             <p>$15/mo</p>
-            <h4>2 months free</h4>
+            {activeOption === 'Yearly' ? <h4>2 months free</h4> : null}
           </div>                       
         </div>
       </div>
