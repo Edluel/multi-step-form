@@ -36,6 +36,10 @@
       h3 { color: $marine-blue; margin-bottom: 0px; }
       p { margin: 2px 0;}
       h4 { color: $purplish-blue; margin: 8px 0; }
+      &.selected {
+        background-color: $light-gray;
+        border-color: $purplish-blue;
+      }
     }
 
     &-arcade {
@@ -112,6 +116,37 @@
       }
     }
     
+  }
+
+  &-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25%;
+    &-back {
+      color: $cool-gray;
+      font-size: 1rem;
+      font-weight:700;
+      cursor: pointer;
+      background-color: rgba($color: #000000, $alpha: 0);
+      border: none;
+      &:hover {
+        color: $marine-blue;
+      }	
+    }
+    &-next {
+      background-color: $marine-blue;
+      color: $magnolia;
+      font-size: 1.1rem;
+      cursor: pointer;
+      align-self: flex-end;
+      border-radius: 7px;
+      padding: 10px;
+      &:hover {
+        background-color: $purplish-blue;
+      }
+    }
+
   }
   
 }

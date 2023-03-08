@@ -42,6 +42,10 @@
   color: hsl(243, 100%, 62%);
   margin: 8px 0;
 }
+.step-2-plan-arcade.selected, .step-2-plan-advanced.selected, .step-2-plan-pro.selected {
+  background-color: hsl(229, 24%, 87%);
+  border-color: hsl(243, 100%, 62%);
+}
 .step-2-plan-arcade-img {
   background-image: url("../../../assets/images/icon-arcade.svg");
   background-size: contain;
@@ -101,4 +105,33 @@
   height: 20px;
   border-radius: 50%;
   transition: transform 0.3s ease-in-out;
+}
+.step-2-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25%;
+}
+.step-2-footer-back {
+  color: hsl(231, 11%, 63%);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+.step-2-footer-back:hover {
+  color: hsl(213, 96%, 18%);
+}
+.step-2-footer-next {
+  background-color: hsl(213, 96%, 18%);
+  color: hsl(217, 100%, 97%);
+  font-size: 1.1rem;
+  cursor: pointer;
+  align-self: flex-end;
+  border-radius: 7px;
+  padding: 10px;
+}
+.step-2-footer-next:hover {
+  background-color: hsl(243, 100%, 62%);
 }/*# sourceMappingURL=step2.css.map */

@@ -3,9 +3,14 @@ import './step2.css'
 
 export default function Step2() {
   const [activeOption, setActiveOption] = useState('Monthly');
+  const [selectedPlan, setSelectedPlan] = useState('');
 
   const handleOptionClick = (option) => {
     setActiveOption(option);
+  }
+
+  const handlePlanClick = (plan) => {
+    setSelectedPlan(plan);
   }
 
   return (
@@ -15,7 +20,10 @@ export default function Step2() {
         You have the option of monthly or yearly billing.
       </p>
       <div className="step-2-plan">
-        <div className="step-2-plan-arcade">
+        <div
+          className={`step-2-plan-arcade ${selectedPlan === 'Arcade' ? 'selected' : ''}`}
+          onClick={() => handlePlanClick('Arcade')}
+        >
           <div className="step-2-plan-arcade-img"/>
           <div className="step-2-arcade-text">
             <h3>Arcade</h3>
@@ -23,7 +31,10 @@ export default function Step2() {
             {activeOption === 'Yearly' ? <h4>2 months free</h4> : null}
           </div>
         </div>
-        <div className="step-2-plan-advanced">
+        <div
+          className={`step-2-plan-advanced ${selectedPlan === 'Advanced' ? 'selected' : ''}`}
+          onClick={() => handlePlanClick('Advanced')}
+        >
           <div className="step-2-plan-advanced-img"/>
           <div className="step-2-advanced-text">
             <h3>Advanced</h3>
@@ -31,7 +42,10 @@ export default function Step2() {
             {activeOption === 'Yearly' ? <h4>2 months free</h4> : null}
           </div>
         </div>
-        <div className="step-2-plan-pro">
+        <div
+          className={`step-2-plan-pro ${selectedPlan === 'Pro' ? 'selected' : ''}`}
+          onClick={() => handlePlanClick('Pro')}
+        >
           <div className="step-2-plan-pro-img"/>
           <div className="step-2-pro-text">
             <h3>Pro</h3>
@@ -56,6 +70,10 @@ export default function Step2() {
         >
           Yearly
         </div>
+      </div>
+      <div className="step-2-footer">
+        <button className='step-2-footer-back'>Go Back</button>
+        <button className='step-2-footer-next' onClick={() => console.log(`Selected Option: ${activeOption}, Selected Plan: ${selectedPlan}`)}>Next Step</button>
       </div>
     </div>
   )
