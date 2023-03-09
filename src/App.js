@@ -11,7 +11,7 @@ function App() {
         <Sidebar/>
         <div>
         <Switch>
-            <Route exact path="/step1">
+            <Route exact path="/">
               <Step1/>
             </Route>
             <Route exact path="/step2">

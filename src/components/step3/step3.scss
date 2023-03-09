@@ -1,0 +1,39 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.step-3 {
+  @include custom-box;
+  h3 { color: $marine-blue; margin-bottom: 0px; }
+  h4 { color: $purplish-blue; margin: 8px 0; }
+  
+  &-add-ons {
+    &-add-on {
+        display: flex;
+        flex-direction: row;
+        border: 2px solid $light-gray;
+        border-radius: 7px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        &-text {
+            margin-left: 15px;
+            p { margin-bottom: 16px;}
+        }
+        &-price { 
+            margin-left: auto;
+            margin-right: 15px;
+            align-self: center;
+        }
+        &:hover {
+            border-color: $purplish-blue;
+        }
+        &.selected {
+            background-color: $light-gray;
+            border-color: $purplish-blue;
+        }
+    }
+  }
+
+  &-footer {
+    @include stepFooter;
+  }
+}
