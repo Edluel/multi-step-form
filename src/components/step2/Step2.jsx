@@ -88,7 +88,7 @@ export default function Step2(props) {
         </div>
       </div>
       <div className="step-2-footer">
-        <button className='step-2-footer-back'>Go Back</button>
+        <button className='step-2-footer-back' onClick={() => history.push('/')}>Go Back</button>
         <button className='step-2-footer-next' onClick={handleSubmit}>Next Step</button>
       </div>
     </div>

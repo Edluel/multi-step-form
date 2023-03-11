@@ -1,0 +1,40 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.step-4 {
+  @include custom-box;
+  h3 { color: $marine-blue; margin-bottom: 0px; }
+  h4 { color: $purplish-blue; margin: 8px 0; }
+
+  &-car {
+    background-color: $light-blue;
+    border-radius: 7px;
+    padding: 15px;
+    &-plan {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 2px solid $cool-gray;
+        p { 
+            cursor: pointer; 
+            text-decoration: underline;
+            margin-top: 5px;
+        }
+    }
+    &-addons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 15px;
+        p { margin-bottom: 10px; }
+    }
+  }
+  &-total {
+    @extend .step-4-car-addons;
+  }
+
+  &-footer {
+    @include stepFooter;
+    margin-top: 20%;
+  }
+}

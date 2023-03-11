@@ -36,7 +36,7 @@
   font-weight: 400;
   padding: 10px;
   border-radius: 50%;
-  cursor: pointer;
+  cursor: default;
   border: 1px solid hsl(0, 0%, 100%);
   color: hsl(231, 100%, 99%);
   background: rgba(0, 0, 0, 0);

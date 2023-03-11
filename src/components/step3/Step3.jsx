@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import './step3.css';
 
-export default function Step3() {
+export default function Step3(props) {
   const [selectedAddOns, setSelectedAddOns] = useState([]);
+  const { setFormData } = props;
+  const history = useHistory();
 
   const handleAddOnClick = (event, addOnName) => {
     event.stopPropagation();
@@ -13,6 +16,17 @@ export default function Step3() {
       setSelectedAddOns([...selectedAddOns, addOnName]);
     }
   };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setFormData((prevData) => ({
+      ...prevData,
+      addOns: selectedAddOns,
+    }));
+    history.push('/step4');
+    
+  };
+  
 
   return (
     <div className="step-3">
@@ -51,8 +65,8 @@ export default function Step3() {
         </div>
       </div>
       <div className="step-3-footer">
-        <button className='step-3-footer-back'>Go Back</button>
-        <button className='step-3-footer-next' onClick={() => console.log(selectedAddOns)}>Next Step</button>
+        <button className='step-3-footer-back' onClick={() => history.push('/step2')} >Go Back</button>
+        <button className='step-3-footer-next' onClick={handleSubmit}>Next Step</button>
       </div>
     </div>
   );

@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+.step-4 {
+  padding-top: 25px;
+  padding-left: 100px;
+  height: 540px;
+  width: 500px;
+}
+.step-4 h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(213, 96%, 28%);
+  margin-bottom: 8px;
+}
+.step-4 p {
+  margin-top: 0px;
+  color: hsl(231, 11%, 63%);
+  margin-bottom: 40px;
+}
+.step-4 h3 {
+  color: hsl(213, 96%, 28%);
+  margin-bottom: 0px;
+}
+.step-4 h4 {
+  color: hsl(243, 100%, 62%);
+  margin: 8px 0;
+}
+.step-4-car {
+  background-color: hsl(206, 94%, 87%);
+  border-radius: 7px;
+  padding: 15px;
+}
+.step-4-car-plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid hsl(231, 11%, 63%);
+}
+.step-4-car-plan p {
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 5px;
+}
+.step-4-car-addons, .step-4-total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.step-4-car-addons p, .step-4-total p {
+  margin-bottom: 10px;
+}
+.step-4-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25%;
+  margin-top: 20%;
+}
+.step-4-footer-back {
+  color: hsl(231, 11%, 63%);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+.step-4-footer-back:hover {
+  color: hsl(213, 96%, 28%);
+}
+.step-4-footer-next {
+  background-color: hsl(213, 96%, 28%);
+  color: hsl(217, 100%, 97%);
+  font-size: 1.1rem;
+  cursor: pointer;
+  align-self: flex-end;
+  border-radius: 7px;
+  padding: 10px;
+}
+.step-4-footer-next:hover {
+  background-color: hsl(243, 100%, 62%);
+}/*# sourceMappingURL=step4.css.map */
