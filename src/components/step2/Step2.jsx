@@ -1,9 +1,14 @@
 import React, { useState } from 'react'
 import './step2.css'
+import { useHistory } from "react-router-dom";
 
-export default function Step2() {
+
+export default function Step2(props) {
   const [activeOption, setActiveOption] = useState('Monthly');
   const [selectedPlan, setSelectedPlan] = useState('Arcade');
+  const { setFormData } = props;
+  const history = useHistory();
+
 
   const handleOptionClick = (option) => {
     setActiveOption(option);
@@ -12,6 +17,17 @@ export default function Step2() {
   const handlePlanClick = (plan) => {
     setSelectedPlan(plan);
   }
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setFormData((prevData) => ({
+      ...prevData,
+      plan: selectedPlan,
+      billing: activeOption,
+    }));
+    history.push('/step3');
+  };
+
 
   return (
     <div className="step-2">
@@ -73,7 +89,7 @@ export default function Step2() {
       </div>
       <div className="step-2-footer">
         <button className='step-2-footer-back'>Go Back</button>
-        <button className='step-2-footer-next' onClick={() => console.log(`Selected Option: ${activeOption}, Selected Plan: ${selectedPlan}`)}>Next Step</button>
+        <button className='step-2-footer-next' onClick={handleSubmit}>Next Step</button>
       </div>
     </div>
   )

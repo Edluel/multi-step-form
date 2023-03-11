@@ -3,7 +3,6 @@
 
 .step-1 {
   @include custom-box;
-
   &-form{
     display: flex;
     flex-direction: column;

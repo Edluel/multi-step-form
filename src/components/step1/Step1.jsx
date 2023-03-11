@@ -1,10 +1,16 @@
 import React, { useState } from 'react'
 import './step1.css';
+import { useHistory } from "react-router-dom";
 
-export default function Step1() {
+
+export default function Step1(props) {
+
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
+    const { setFormData } = props;
+    const history = useHistory();
+
 
     const handleNameChange = (event) => {
         setName(event.target.value);
@@ -20,9 +26,14 @@ export default function Step1() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(name, email, phone);
-        // fazer algo com os dados do formulário
+        setFormData({
+            name: name,
+            email: email,
+            phone: phone,
+        });
+        history.push('/step2');
     };
+
     
   return (
     <div className="step-1">
@@ -56,7 +67,7 @@ export default function Step1() {
                 type="tel"
                 id="phone"
                 name="phone"
-                pattern="[0-9]{9}"
+                pattern="[0-9]{2}[0-9]{9}"
                 value={phone}
                 onChange={handlePhoneChange}
                 placeholder="Enter your phone number"
