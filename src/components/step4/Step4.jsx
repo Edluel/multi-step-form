@@ -8,8 +8,7 @@ export default function Step4(props) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    //history.push('/step4');
-    console.log('submitted');
+    history.push('/tks');
   };
 
   const addOnValue = {

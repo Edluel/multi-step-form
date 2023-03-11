@@ -5,6 +5,7 @@ import Step2 from './components/step2/Step2';
 import Step3 from './components/step3/Step3';
 import Step4 from './components/step4/Step4';
 import { useState } from 'react';
+import Thanks from './components/thanks/Thanks';
 
 function App() {
   const [formData, setFormData] = useState({
@@ -31,6 +32,9 @@ function App() {
             </Route>
             <Route exact path="/step4">
               <Step4 formData={formData} />
+            </Route>
+            <Route exact path="/tks">
+              <Thanks />
             </Route>
             <Route path="*">
               <Step1 setFormData={setFormData} />

@@ -28,7 +28,7 @@ export default function Sidebar() {
             </div>
         </div>
         <div className="side-bar-step">
-        <button className={location.pathname === '/step4' ? 'selected' : ''}>4</button>
+        <button className={location.pathname === '/step4'|| location.pathname === '/tks' ? 'selected' : ''}>4</button>
             <div className="side-bar-step-text">
                 <h2>STEP 4</h2>
                 <p>SUMMARY</p>
