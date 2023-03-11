@@ -9,6 +9,7 @@ export default function Step4(props) {
   const handleSubmit = (event) => {
     event.preventDefault();
     history.push('/tks');
+    console.log(formData);
   };
 
   const addOnValue = {
